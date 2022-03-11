@@ -1,16 +1,19 @@
-# airost_mask_detection_demo
+# Mask Detection
 
-
-Download image dataset (not processed) here
+## Image Dataset (not processed)
+Download here
 
     https://drive.google.com/file/d/1WPkuBCEUPlnAbvx_k0arlFDCNnEX8Xcm/view?usp=sharing
-    
-Download image dataset (preprocessed) here
+   
+
+## Image Dataset (preprocessed)
+Download image dataset (preprocessed) here to train on pc 
+You can make a copy on google drive to train the model in google colab
 
     https://drive.google.com/file/d/1-x2yGkd1Cd-_-Yu04HqA-FtPhZlQMhLT/view?usp=sharing
 
-
-Download trained models here
+## Trained Models
+Download here.
 
     Self-built layers 
     https://drive.google.com/file/d/1Gza22bjfju0Al6aibNkVpNIAW1e6eeTv/view?usp=sharing
