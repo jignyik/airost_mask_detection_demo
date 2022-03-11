@@ -21,3 +21,9 @@ Download here.
     Resnetv2_50 
     https://drive.google.com/file/d/1-77FQSx1oYbryu28Wyj8VP5RonykJb_n/view?usp=sharing
     
+## Webcam Implementation
+Install all required library
+
+     pip install tensorflow mediapipe numpy opencv-python
+
+Run webcam.py
