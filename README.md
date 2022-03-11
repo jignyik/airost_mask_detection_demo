@@ -22,7 +22,7 @@ Download here.
     https://drive.google.com/file/d/1-77FQSx1oYbryu28Wyj8VP5RonykJb_n/view?usp=sharing
     
 ## Webcam Implementation
-Install all required library
+Install all prerequisites in terminal
 
      pip install tensorflow mediapipe numpy opencv-python
 
