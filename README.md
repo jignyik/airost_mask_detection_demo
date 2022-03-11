@@ -1,7 +1,7 @@
 # airost_mask_detection_demo
 
 
-Downlaod image dataset (not processed) here
+Download image dataset (not processed) here
 
     https://drive.google.com/file/d/1WPkuBCEUPlnAbvx_k0arlFDCNnEX8Xcm/view?usp=sharing
     
