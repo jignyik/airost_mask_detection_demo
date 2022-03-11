@@ -7,8 +7,8 @@ Download here
    
 
 ## Image Dataset (preprocessed)
-Download image dataset (preprocessed) here to train on pc 
-You can make a copy on google drive to train the model in google colab
+Download image dataset (preprocessed) here to train on pc  
+You can also make a copy on google drive so that you can train on google colab
 
     https://drive.google.com/file/d/1-x2yGkd1Cd-_-Yu04HqA-FtPhZlQMhLT/view?usp=sharing
 
