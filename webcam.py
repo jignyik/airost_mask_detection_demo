@@ -40,27 +40,28 @@ while True:
                 cropped_face = cv2.resize(cropped_face, (224,224))
                 faces.append(cropped_face)
             # print(frame.shape)
-
-        results = model(np.array(faces))
-        # print(results)
-        results = np.array(results)
-        # print(results)
-        classes = ["wear wrongly", "wearing", "not wearing"]
-        output_print = []
-        for i in results:
-            index = np.argmax(i)
-            # print(index)
-            predicted = classes[index]
-            string_to_print = "{} : {} %".format(predicted, round(np.max(i)*100, 2))
-            output_print.append(string_to_print)
-
-        # draw bounding box on webcam
-        if len(coordinates) != 0:
-            for o, i in enumerate(output_print):
-                frame = cv2.rectangle(frame, (coordinates[o][0], coordinates[o][1]), (coordinates[o][2], coordinates[o][3]), (0,255,0), thickness=1,
-                                      lineType= cv2.LINE_AA)
-                frame = cv2.putText(frame, i, (coordinates[o][0], coordinates[o][1]-5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,255,0), thickness=1,
-                                      lineType= cv2.LINE_AA)
+            
+        if len(faces) != 0:
+            results = model(np.array(faces))
+            # print(results)
+            results = np.array(results)
+            # print(results)
+            classes = ["wear wrongly", "wearing", "not wearing"]
+            output_print = []
+            for i in results:
+                index = np.argmax(i)
+                # print(index)
+                predicted = classes[index]
+                string_to_print = "{} : {} %".format(predicted, round(np.max(i)*100, 2))
+                output_print.append(string_to_print)
+    
+            # draw bounding box on webcam
+            if len(coordinates) != 0:
+                for o, i in enumerate(output_print):
+                    frame = cv2.rectangle(frame, (coordinates[o][0], coordinates[o][1]), (coordinates[o][2], coordinates[o][3]), (0,255,0), thickness=1,
+                                          lineType= cv2.LINE_AA)
+                    frame = cv2.putText(frame, i, (coordinates[o][0], coordinates[o][1]-5), cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0,255,0), thickness=1,
+                                          lineType= cv2.LINE_AA)
 
         # for i in coordinates:
         #     frame = cv2.rectangle(frame, )
